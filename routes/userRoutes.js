@@ -40,7 +40,7 @@ userRouter.post("/login",async(req,res)=>{
     const result=bcrypt.compareSync(password, hash)
     if(result){
         var token = jwt.sign({ userID:user._id }, process.env.SECRET_KEY);
-        res.send({msg:"logged_in",token:token})
+        res.send({msg:user.name,token:token})
 
     }else{
         res.send("Failed login: password didn't match")
