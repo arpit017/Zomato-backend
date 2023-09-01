@@ -41,7 +41,7 @@ npm start
 ```
   The server will be running at http://localhost:8080
 
-Project Structure
+## Project Structure
 The project structure is organized as follows:
 
 - config/: Configuration files for database, JWT, and other settings.
@@ -54,7 +54,7 @@ The project structure is organized as follows:
 - Authentication
 - This backend uses JSON Web Tokens (JWT) for user authentication. When a user logs in, a JWT token is generated and returned. This token should be included in the Authorization header of subsequent requests to protected routes for user authentication.
 
-API Endpoints
+## API Endpoints
 The following API endpoints are available:
 
 - /api/auth/register: User registration
@@ -65,7 +65,7 @@ The following API endpoints are available:
 - /api/users/profile: Get user profile information
 For detailed information about the endpoints and how to use them, refer to the API documentation or Postman collection.
 
-Environment Variables
+## Environment Variables
 - Make sure to configure the following environment variables in your .env file:
 
 - PORT: Port on which the server should run (default: 3000).
