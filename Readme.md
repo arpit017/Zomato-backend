@@ -57,12 +57,11 @@ The project structure is organized as follows:
 ## API Endpoints
 The following API endpoints are available:
 
-- /api/auth/register: User registration
-- /api/auth/login: User login
-- /api/auth/logout: User logout
-- /api/restaurants: Create, Read, Update, and Delete restaurant data
-- /api/reviews: Create, Read, Update, and Delete restaurant reviews
-- /api/users/profile: Get user profile information
+- /api/users/signup: User registration
+- /api/users/login: User login
+- /api/items: Create, Read, Update, and Delete restaurant data
+- /api/items/: Create, Read, Update, and Delete restaurant reviews
+- /api/items/personal: Get user profile information
 For detailed information about the endpoints and how to use them, refer to the API documentation or Postman collection.
 
 ## Environment Variables
