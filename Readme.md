@@ -44,31 +44,31 @@ npm start
 Project Structure
 The project structure is organized as follows:
 
-config/: Configuration files for database, JWT, and other settings.
-controllers/: Controllers for handling various API endpoints.
-models/: Mongoose models for defining database schemas.
-routes/: Express routes for defining API endpoints.
-middlewares/: Custom middleware functions.
-utils/: Utility functions.
-index.js: Entry point of the application.
-Authentication
-This backend uses JSON Web Tokens (JWT) for user authentication. When a user logs in, a JWT token is generated and returned. This token should be included in the Authorization header of subsequent requests to protected routes for user authentication.
+- config/: Configuration files for database, JWT, and other settings.
+- controllers/: Controllers for handling various API endpoints.
+- models/: Mongoose models for defining database schemas.
+- routes/: Express routes for defining API endpoints.
+- middlewares/: Custom middleware functions.
+- utils/: Utility functions.
+- index.js: Entry point of the application.
+- Authentication
+- This backend uses JSON Web Tokens (JWT) for user authentication. When a user logs in, a JWT token is generated and returned. This token should be included in the Authorization header of subsequent requests to protected routes for user authentication.
 
 API Endpoints
 The following API endpoints are available:
 
-/api/auth/register: User registration
-/api/auth/login: User login
-/api/auth/logout: User logout
-/api/restaurants: Create, Read, Update, and Delete restaurant data
-/api/reviews: Create, Read, Update, and Delete restaurant reviews
-/api/users/profile: Get user profile information
+- /api/auth/register: User registration
+- /api/auth/login: User login
+- /api/auth/logout: User logout
+- /api/restaurants: Create, Read, Update, and Delete restaurant data
+- /api/reviews: Create, Read, Update, and Delete restaurant reviews
+- /api/users/profile: Get user profile information
 For detailed information about the endpoints and how to use them, refer to the API documentation or Postman collection.
 
 Environment Variables
-Make sure to configure the following environment variables in your .env file:
+- Make sure to configure the following environment variables in your .env file:
 
-PORT: Port on which the server should run (default: 3000).
-MONGODB_URI: MongoDB connection URL.
-JWT_SECRET: Secret key for JWT token generation.
-Other application-specific variables.
+- PORT: Port on which the server should run (default: 3000).
+- MONGODB_URI: MongoDB connection URL.
+- JWT_SECRET: Secret key for JWT token generation.
+- Other application-specific variables.
